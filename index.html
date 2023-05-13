@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>サウナゆきたい</title>
+  <style>
+
+
+  </style>
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <header>
+      <h1>サウナユキタイ♨️</h1>
+      <div class="container">
+        <div class="steam"></div>
+        <div class="steam"></div>
+        <div class="steam"></div>
+        <div class="steam"></div>
+        <div class="steam"></div>
+      </div>
+      <nav>
+          <a href="#about">自己紹介</a>
+          <a href="#hobby">趣味</a>
+          <a href="#sauna">サウナ</a>
+          <a href="#contact">連絡先</a>
+      </nav>
+  </header>
+  <main>
+      <h2 id="about">自己紹介</h2>
+      <p>氏名：松崎竜雅</p>
+      <p>年齢：26歳</p>
+      <p>出身：東京都（江戸川区）</p>
+      <p>職業：システムエンジニア（会計・業務機関システム）</p>
+      <p>マイサウナ：Paradisea(三田)</p>
+      <h2 id="hobby">趣味</h2>
+      <ul>
+        <li>サウナ</li>
+        <li>ビール</li>
+        <li>ポーカー</li>
+        <li>スノーボード</li>
+        <li>ダイビング</li>
+    </ul>
+      <div class="slider-container">
+        <div class="slider">
+          <img src="./img/about_03.jpg" alt="画像1">
+          <img src="./img/about_03.jpg" alt="画像2">
+          <img src="./img/about_03.jpg" alt="画像3">
+          <img src="./img/about_03.jpg" alt="画像4">
+          <img src="./img/about_03.jpg" alt="画像5">
+          <img src="./img/about_03.jpg" alt="画像6">
+          <img src="./img/about_03.jpg" alt="画像7">
+          <img src="./img/about_03.jpg" alt="画像8">
+          <img src="./img/about_03.jpg" alt="画像9">
+        </div>
+    </div>
+      <h2 id="sauna">最近行ったサウナ</h2>
+      <button id="createDivButton">サウナ行きたい</button>
+      <div class="container">
+        <div class="steam"></div>
+        <div class="steam"></div>
+        <div class="steam"></div>
+        <div class="steam"></div>
+        <div class="steam"></div>
+      </div>
+      <div class="map-container">
+        <div>
+          <p>①Paradisea(三田)</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828030380566!2d139.76493611525894!3d35.68116753619813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89d1975%3A0x277c49ba34bfe5e5!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1648133931493!5m2!1sen!2sjp" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+          <p>②レンブラント(新橋)</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828030380566!2d139.76493611525894!3d35.68116753619813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89d1975%3A0x277c49ba34bfe5e5!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1648133931493!5m2!1sen!2sjp" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+          <p>③サウナ東京(赤坂)</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828030380566!2d139.76493611525894!3d35.68116753619813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89d1975%3A0x277c49ba34bfe5e5!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1648133931493!5m2!1sen!2sjp" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+          <p>④コリドーの湯(銀座)</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828030380566!2d139.76493611525894!3d35.68116753619813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89d1975%3A0x277c49ba34bfe5e5!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1648133931493!5m2!1sen!2sjp" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <h2 id="contact">連絡先</h2>
+      <p>Email: xxxyyy@gmail.com</p>
+
+      <div class="form-container">
+          <h2>お問い合わせフォーム</h2>
+          <form>
+              <label for="name">お名前</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="message">メッセージ</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+
+              <label for="message">問い合わせ内容</label>
+              <div class="radio-group">
+                <label>
+                    <input type="radio" name="contact_reason" value="option1" required>
+                    サウナ行きたい
+                </label>
+                <label>
+                    <input type="radio" name="contact_reason" value="option2">
+                    飲みに行きたい
+                </label>
+                <label>
+                    <input type="radio" name="contact_reason" value="option3">
+                    サウナと飲みに行きたい
+                </label>
+            </div>
+              <button type="submit">送信</button>
+          </form>
+<script>
+  
+let sliderIndex = 0;
+    
+function slide() {
+  const slider = document.querySelector('.slider');
+  slider.style.transform = `translateX(-${sliderIndex * 100}%)`;
+  sliderIndex = (sliderIndex + 1) % 4;
+  if(sliderIndex >= 3) sliderIndex = 0
+  setTimeout(slide, 3000);
+}
+    
+slide();
+
+const createDivButton = document.getElementById("createDivButton");
+const DisplyaArea = document.getElementById("sauna");
+
+createDivButton.addEventListener("click", () => {
+  const divElement = document.createElement("div");
+  divElement.className = "sauna-container";
+  divElement.id = "sauna-container";
+  divElement.innerHTML = "サウナユキタイ";
+  DisplyaArea.appendChild(divElement);
+  makeElementDraggable(divElement);
+});
+
+function makeElementDraggable(element) {
+  let isDragging = false;
+  let offsetX, offsetY;
+
+  element.addEventListener("mousedown", (event) => {
+    isDragging = true;
+    offsetX = event.clientX - element.getBoundingClientRect().left;
+    offsetY = event.clientY - element.getBoundingClientRect().top;
+  });
+
+  document.addEventListener("mousemove", (event) => {
+    if (!isDragging) return;
+
+    element.style.left = event.clientX - offsetX + window.scrollX + "px";
+    element.style.top = event.clientY - offsetY + window.scrollY + "px";
+  });
+
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+  });
+}
+</script>
+      </div>
+  </main>
+</body>
+
+</html>

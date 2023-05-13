@@ -1,0 +1,277 @@
+/* ここから下に記載していく */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998;
+    color: #ffffff;
+    padding: 15px;
+    min-height: 70px;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998;
+    color: #ffffff;
+    padding: 15px;
+    min-height: 60px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+header h2 {
+    margin: 0;
+    padding: 10,10;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  margin-top: 100px;
+  padding: 0 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+main h2 {
+  font-size: 22px;
+  color: #333333;
+  margin-top: 30px;
+}
+
+main p {
+  font-size: 16px;
+  color: #333333;
+}
+
+.map-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.map-container iframe {
+    border: 0;
+    border-radius: 10px;
+}
+.map-container div {
+    width: calc(50% - 20px);
+    height: 200px;
+    margin: 10px;
+    border: 0;
+}
+
+.form-container {
+    margin-top: 30px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3b5998;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+form button:hover {
+    background-color: #e8491d;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.image-container img {
+    width: 385px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 630px; */
+    max-width: 1185px;
+    margin: 30px auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s;
+    width: 100%;
+}
+
+.slider img {
+    width: calc(100% - 5px);
+    height: auto;
+    margin: auto 5px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#draggable {
+width: 100px;
+height: 100px;
+background-color: lightblue;
+cursor: move;
+position: absolute;
+}  
+
+#createDivButton {
+background-color: #e74c3c;
+color: white;
+font-size: 16px;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+outline: none;
+transition: all 0.3s;
+}
+
+#createDivButton:hover {
+background-color: #c0392b;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#createDivButton:active {
+background-color: #b4372b;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+transform: translateY(1px);
+}
+
+.sauna-container {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(0, 0, 0, 0);
+border: 3px solid #ff5c33;
+border-radius: 10px;
+width: 300px;
+height: 100px;
+cursor: move;
+position: absolute;
+
+font-size: 24px;
+font-weight: bold;
+color: #ff5c33;
+}
+
+.sauna-text {
+font-size: 24px;
+font-weight: bold;
+color: #ff5c33;
+}
+
+.steam {
+position: absolute;
+left:170px;
+width: 6px;
+height: 80px;
+background: rgba(255, 255, 255, 0.6);
+border-radius: 50%;
+animation: steam-animation 3s infinite;
+}
+
+.steam:nth-child(2) {
+width: 6px;
+height: 70px;
+left: 180px;
+animation-delay: 0.5s;
+}
+
+.steam:nth-child(4) {
+width: 6px;
+height: 70px;
+left: 190px;
+animation-delay: 0.7s;
+}
+
+.steam:nth-child(3) {
+width: 5px;
+height: 60px;
+left: 200px;
+animation-delay: 0.8s;
+}
+
+.steam:nth-child(5) {
+width: 5px;
+height: 60px;
+left: 210px;
+animation-delay: 1s;
+}
+
+@keyframes steam-animation {
+0% {
+transform: translateY(0);
+opacity: 1;
+}
+50% {
+transform: translateY(-100px) scale(1.2);
+opacity: 0.5;
+}
+100% {
+transform: translateY(-200px) scale(1.4);
+opacity: 0;
+}
+}
